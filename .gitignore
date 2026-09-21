@@ -13,3 +13,6 @@ venv/
 
 # Local vector database
 chroma_db/
+
+# Research paper - keep locally
+phase1-rag/data/2026132836.pdf
