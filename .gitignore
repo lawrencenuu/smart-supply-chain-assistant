@@ -1,0 +1,15 @@
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables / secrets
+.env
+
+# Local vector database
+chroma_db/
