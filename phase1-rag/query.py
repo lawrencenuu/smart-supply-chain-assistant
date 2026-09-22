@@ -67,15 +67,30 @@ retrieval_chain = create_retrieval_chain(
     document_chain
 )
 
+def answer_question(question):
+    response = retrieval_chain.invoke(
+        {"input": question}
+    )
+
+    # return response["answer"]
+    return response
+
+# Testing the answer_question function with a sample question 
+# answer = answer_question(
+#     "What optimizer and learning rate were used during training?"
+# )
+
+# print(answer)
+
 # question = (
 #     "What deep learning architectures were evaluated in this study, "
 #     "and which one performed best?"
 # )
 # question = "What dataset was used in this study?"
-question = "What optimizer and learning rate were used during training?"
+# question = "What optimizer and learning rate were used during training?"
 
-response = retrieval_chain.invoke(
-    {"input": question}
-)
+# response = retrieval_chain.invoke(
+#     {"input": question}
+# )
 
-print(response["answer"])
+# print(response["answer"])
